@@ -1,0 +1,399 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Grid 1st CSS */
+.grid_sec_container1 {
+    height: 400px;
+    width: 600px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: "header header"
+                         "sidebar main"
+                         "sidebar footer";
+    gap: 10px;
+    text-align: center;
+}
+.col_sec_1, .col_sec_2, .col_sec_3, .col_sec_4 {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col_sec_1 {
+    background-color: #f1ecc3;
+    grid-area: header;
+}
+.col_sec_2 {
+    background-color: #f1cac3;
+    grid-area: sidebar;
+}
+.col_sec_3 {
+    background-color: #d0f1c3;
+}
+.col_sec_4 {
+    background-color: #c3d1f1;
+}
+
+/* Grid 2nd CSS */
+.grid_sec_container2 {
+    height: 650px;
+    width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    gap: 10px;
+    grid-template-areas: "empty stage-1 stage-2 stage-3 stage-4 stage-5 stage-6 stage-7"
+                         "tim1 talk1 talk1 talk4 talk5 talk5 talk9 talk9"
+                         "tim2 talk1 talk1 talk4 break1 break1 talk9 talk9"
+                         "tim3 talk1 talk1 talk4 talk6 talk6 talk9 talk9"
+                         "tim4 break2 break2 talk4 talk6 talk6 talk9 talk9"
+                         "tim5 talk2_3 talk2_3 talk2_3 talk6 talk6 talk9 talk9"
+                         "tim6 talk2_3 talk2_3 talk2_3 talk6 talk6 talk9 talk9"
+                         "tim7 break3 break3 break3 break3 break3 break3 break3"
+                         "tim8 talk7 talk7 empty2 empty2 empty2 talk10 talk10"
+                         "tim9 talk7 talk7 talk8 talk8 talk8 talk10 talk10"
+                         "tim10 talk7 talk7 talk8 talk8 talk8 talk10 talk10";
+}
+.grid_sec_col_1, 
+.grid_sec_col_2, 
+.grid_sec_col_3, 
+.grid_sec_col_4, 
+.grid_sec_col_5, 
+.grid_sec_col_6, 
+.grid_sec_col_7, 
+.grid_sec_col_8 {
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+.grid_sec_row_1, 
+.grid_sec_row_2, 
+.grid_sec_row_3, 
+.grid_sec_row_4,
+.grid_sec_row_5, 
+.grid_sec_row_6, 
+.grid_sec_row_7,  
+.grid_sec_row_8, 
+.grid_sec_row_9, 
+.grid_sec_row_10 {
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+.grid_sec_col_1.empty {
+    grid-area: empty;
+}
+.grid_sec_col_2 {
+    grid-area: stage-1;
+}
+.grid_sec_col_3 {
+    grid-area: stage-2;
+}
+.grid_sec_col_4 {
+    grid-area: stage-3;
+}
+.grid_sec_col_5 {
+    grid-area: stage-4;
+}
+.grid_sec_col_6 {
+    grid-area: stage-5;
+}
+.grid_sec_col_7 {
+    grid-area: stage-6;
+}
+.grid_sec_col_8 {
+    grid-area: stage-7;
+}
+
+.grid_sec_row_1 {
+    grid-area: tim1;
+}
+.grid_sec_row_2 {
+    grid-area: tim2;
+}
+.grid_sec_row_3 {
+    grid-area: tim3;
+}
+.grid_sec_row_4 {
+    grid-area: tim4;
+    background-color: #ffa869;
+}
+.grid_sec_row_5 {
+    grid-area: tim5;
+}
+.grid_sec_row_6 {
+    grid-area: tim6;
+}
+.grid_sec_row_7 {
+    grid-area: tim7;
+    background-color: #ffa869;
+}
+.grid_sec_row_8 {
+    grid-area: tim8;
+}
+.grid_sec_row_9 {
+    grid-area: tim9;
+}
+.grid_sec_row_10 {
+    grid-area: tim10;
+}
+.talk1_col, 
+.talk2_talk3_col, 
+.talk4_col, 
+.talk5_col,
+.talk6_col, 
+.talk7_col, 
+.talk8_col, 
+.talk9_col,
+.talk10_col,  
+.break_col1, 
+.break_col2, 
+.break_col3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 18px;
+}
+.talk1_col {
+    grid-area: talk1;
+    background-color: #d2e4ed;
+    border-radius: 10px;
+    color: #3482ae;
+}
+.talk4_col {
+    grid-area: talk4;
+    background-color: #bdf5d3;
+    border-radius: 10px;
+    color: #2ebe68;
+}
+.talk5_col {
+    grid-area: talk5;
+    background-color: #f2a8a8;
+    border-radius: 10px;
+    color: #e55959;
+    padding: 0;
+    text-align: center;
+}
+.talk9_col {
+    grid-area: talk9;
+    background-color: #fff7b3;
+    border-radius: 10px;
+    color: #ffbe3c;
+}
+
+.break_col1 {
+    grid-area: break1;
+    background-color: #e1dede;  
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    color: #5b5b5b;
+}
+.talk6_col {
+    grid-area: talk6;
+    background-color: #f2a8a8;
+    border-radius: 10px;
+    color: #e55959;
+}
+.break_col2 {
+    grid-area: break2;
+    background-color: #e1dede;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    color: #5b5b5b;
+}
+.talk2_talk3_col {
+    grid-area: talk2_3;
+    background-color: #d2e4ed;
+    border-radius: 10px;
+    color: #3482ae;
+}
+.break_col3 {
+    grid-area: break3;
+    background-color: #e1dede;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    color: #5b5b5b;
+}
+.talk7_col {
+    grid-area: talk7;
+    background-color: #d2e4ed;
+    border-radius: 10px;
+    color: #3482ae;
+}
+.empty_text_area {
+    grid-area: empty2;
+}
+.talk10_col {
+    grid-area: talk10;
+    background-color: #fff7ad;
+    border-radius: 10px;
+    color: #ffbe3c;
+}
+.talk8_col {
+    grid-area: talk8;
+    background-color: #bdf5d3;
+    border-radius: 10px;
+    color: #2ebe68;
+}
+.grid_sec_container2 span {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #5b5b5b;
+}
+.grid_sec_container2 h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Grid 2nd CSS */
+.grid_sec_container3 {
+    background-color: #2d2f3b;
+    height: 500px;
+    width: 750px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 70px 1fr 70px;
+    gap: 5px;
+    grid-template-areas: "one-1 one-1"
+                         "two-2 three-3"
+                         "four-4 four-4";
+    padding: 60px;
+}
+.text_area_1, 
+.text_area_2, 
+.text_area_3, 
+.text_area_4 {
+    background-image: linear-gradient(45deg, #518ddc, #da71b3);
+    /* color: #ffffff; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.text_area_1 {
+    grid-area: one-1;
+    color: #ffffff;
+}
+.text_area_2 {
+    grid-area: two-2;
+    height: 70px;
+    color: #ffffff;
+}
+.text_area_3 {
+    grid-area: three-3;
+}
+.multi_div_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.text_area_4 {
+    grid-area: four-4;
+    color: #ffffff;
+}
+.multi_div_area_1 {
+    display: grid;
+    grid-template-columns: 142px 142px 142px;
+    grid-template-rows: 65px 65px 65px 65px;
+    grid-template-areas: "div-1 div-1 div-2"
+                         "div-4 div-8 div-2"
+                         "div-5 div-5 div-9"
+                         "div-6 div-6 div-6";
+    gap: 5px;
+    /* padding-top: 70px; */
+}
+.multi_div_area_2 {
+    display: grid;
+    grid-template-columns: 142px;
+    grid-template-rows: 65px 100px 100px;
+    gap: 5px;
+    /* padding-top: 70px; */
+    grid-template-areas: "div-3"
+                         "div-7"
+                         "div-10";
+}
+.area_1, 
+.area_2, 
+.area_3, 
+.area_4, 
+.area_5, 
+.area_6, 
+.area_7, 
+.area_8, 
+.area_9, 
+.area_10 {
+    background-color: #fff;
+}
+.area_1 {
+    grid-area: div-1;
+}
+.area_2 {
+    grid-area: div-2;
+}
+.area_3 {
+    grid-area: div-3;
+}
+.area_4 {
+    grid-area: div-4;
+}
+.area_5 {
+    grid-area: div-5;
+}
+.area_6 {
+    grid-area: div-6;
+}
+.area_7 {
+    grid-area: div-7;
+}
+.area_8 {
+    grid-area: div-8;
+}
+.area_9 {
+    grid-area: div-9;
+}
+.area_10 {
+    grid-area: div-10;
+}
+.content_div {
+    text-align: center;
+    padding: 25px;
+}
+.text_area_1, 
+.text_area_2, 
+.text_area_4, 
+.area_1, 
+.area_2, 
+.area_3, 
+.area_4, 
+.area_5, 
+.area_6, 
+.area_7, 
+.area_8, 
+.area_9, 
+.area_10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.content_div span {
+    color: #ffffff;
+    font-size: 12px;
+}

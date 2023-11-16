@@ -1,0 +1,94 @@
+/* Grid CSS Starts Here */
+.wrapper_grid {
+   
+    height: 600px;
+    background-color: burlywood;
+    display: grid;
+    /* grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr auto; */
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr auto;
+    text-align: center;
+    gap: 10px;
+}
+.col_1, .col_2, .col_3, .col_4 {
+    /* width: 100px;
+    height: 100px; */
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.col_1 {
+    background-color: #ffcccc;
+}
+.col_2 {
+    background-color: #ccccff;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.col_3 {
+    background-color: #ccffcc;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.col_4 {
+    background-color: #ffffcc;
+}
+
+.grid_container {
+    height: 600px;
+    margin-top: 30px;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: 100px 1fr 100px;
+    gap: 10px;
+    text-align: center;
+}
+.grid_col_1, .grid_col_2, .grid_col_3, .grid_col_4, .grid_col_5 {
+    background-color: #ffa100;
+}
+.grid_col_1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid_col_5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid_section {
+    background-color: #edeaea;
+    height: 600px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 10px;
+}
+.grid_col1 {
+    background-color: #f7cde5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.grid_col2 {
+    background-color: #c3f1e7;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.grid_col3 {
+    background-color: #f0e1c4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.grid_col4 {
+    background-color: #fab691;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.grid_col5 {
+    background-color: #c4d2ed;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
